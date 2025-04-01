@@ -1,5 +1,5 @@
 /* POPPINS FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* VARIABLES */
 :root {
@@ -15,72 +15,71 @@
     --second-color: #ff8a00;
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
-
 }
 
 /* BASE */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* SCROLL */
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* SCROLL DESING */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     border-radius: 25px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 30px;
 }
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: #bbb;
 }
 
 /* BUTTONS DESING GERAL */
-.btn{
+.btn {
     font-weight: 500;
     padding: 12px 20px;
     background: #efefef;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
 }
-.btn>i{
+.btn > i {
     margin-left: 10px;
 }
-.btn:hover{
+.btn:hover {
     background: var(--second-color);
     color: var(--color-white);
 }
 
 /* ICONS DESING GERAL */
-i{
+i {
     font-size: 16px;
 }
 
 /* BASE */
-body{
+body {
     background: var(--body-color);
 }
-.container{
+.container {
     width: 100%;
     position: relative;
 }
 
 /* NAV BAR */
-nav{
+nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -89,18 +88,18 @@ nav{
     line-height: 90px;
     background: var(--body-color);
     padding-inline: 9vw;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 100;
 }
-.nav-logo{
+.nav-logo {
     position: relative;
 }
-.nav-name{
+.nav-name {
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
 }
-.nav-logo span{
+.nav-logo span {
     position: absolute;
     top: -0.1px;
     right: -95px;
@@ -108,35 +107,37 @@ nav{
     font-weight: 600;
     color: var(--text-color-second);
 }
-.nav-menu, .nav-menu-list{
+.nav-menu,
+.nav-menu-list {
     display: flex;
 }
-.nav-menu, .nav-list{
+.nav-menu,
+.nav-list {
     list-style: none;
     position: relative;
 }
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
 }
-.nav-menu-btn{
+.nav-menu-btn {
     display: none;
 }
-.nav-menu-btn i{
+.nav-menu-btn i {
     font-size: 28px;
     cursor: pointer;
 }
 
 /* WRAPPER DESING */
-.wrapper{
+.wrapper {
     padding-inline: 10vw;
 }
 
 /* FEATURED BOX */
-.featured-box{
+.featured-box {
     position: relative;
     display: flex;
     height: 100vh;
@@ -144,7 +145,7 @@ nav{
 }
 
 /* FEATURED TEXT */
-.featured-text{
+.featured-text {
     position: relative;
     display: flex;
     justify-content: center;
@@ -155,45 +156,45 @@ nav{
     padding-left: 20px;
 }
 
-.featured-text-card span{
+.featured-text-card span {
     background: var(--second-color);
     color: var(--color-white);
     padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
 }
-.featured-name{
+.featured-name {
     font-size: 50px;
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
 }
-.typedText{
+.typedText {
     text-transform: capitalize;
     color: var(--text-color-third);
 }
-.featured-text-info{
+.featured-text-info {
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
 }
-.featured-text-btn{
+.featured-text-btn {
     display: flex;
     gap: 20px;
 }
-.featured-text-btn>.orange-btn{
+.featured-text-btn > .orange-btn {
     background: var(--first-color);
     color: var(--color-white);
 }
-.featured-text-btn>.orange-btn:hover{
+.featured-text-btn > .orange-btn:hover {
     background: var(--first-color-hover);
 }
-.social_icons{
+.social_icons {
     display: flex;
     margin-top: 5em;
     gap: 30px;
 }
-.icon{
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,19 +204,19 @@ nav{
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
-.icon:hover{
+.icon:hover {
     color: var(--first-color);
 }
 
 /* FEATURED IMAGE */
-.featured-image{
+.featured-image {
     display: flex;
     justify-content: right;
     align-content: center;
     min-height: 80vh;
     width: 50%;
 }
-.image{
+.image {
     margin: auto 0;
     width: 380px;
     height: 380px;
@@ -223,18 +224,18 @@ nav{
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
-.image img{
+.image img {
     width: 380px;
     height: 380px;
     object-fit: cover;
 }
 @keyframes imgFloat {
-    60%{
+    60% {
         transform: translateY(8px);
         border-radius: 45% 55% 45% 55%;
     }
 }
-.scroll-btn{
+.scroll-btn {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -251,41 +252,39 @@ nav{
     border-radius: 30px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
-.scroll-btn i{
+.scroll-btn i {
     font-size: 20px;
 }
 
-
 /* MAIN BOX */
-.section{
+.section {
     padding-block: 5em;
 }
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 50px;
 }
-.col{
+.col {
     display: flex;
     width: 50%;
 }
 
-
 /* REUSEBLE CSS */
-.top-header{
+.top-header {
     text-align: center;
     margin-bottom: 5em;
 }
-.top-header h1{
+.top-header h1 {
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 10px;
 }
-.top-header span{
+.top-header span {
     color: #999;
 }
-h3{
+h3 {
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color-second);
@@ -293,7 +292,7 @@ h3{
 }
 
 /* ABOUT INFO */
-.about-info{
+.about-info {
     position: relative;
     display: flex;
     align-items: center;
@@ -305,12 +304,12 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
 }
-.about-info p{
+.about-info p {
     text-align: center;
     font-size: 15px;
     color: #777;
 }
-.about-btn button{
+.about-btn button {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -318,40 +317,53 @@ h3{
     color: var(--color-white);
     border-radius: 30px;
 }
-.about-btn button:hover{
+.about-btn button:hover {
     background: var(--first-color-hover);
 }
 
-
-
-
-
-
-
+/* ABOUT SKILLS-BOX */
+.skills-box {
+    margin: 10px;
+    justify-items: center;
+}
+.skills-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-list a{
+    padding: 2px 10px;
+    justify-content: center;
+}
+.skills-list img {
+    border-radius: 20px;
+    justify-content: center;
+}
 
 /* MEDIA QUERRY == 1024px */
 @media only screen and (max-width: 1024px) {
-    .featured-text{
+    .featured-text {
         padding: 0;
     }
-    .image, .image img{
+    .image,
+    .image img {
         width: 320px;
         height: 320px;
     }
 }
 
-
-
-
 /* MEDIA QUERRY == 900px */
 @media only screen and (max-width: 900px) {
-    .nav-button{
+    .nav-button {
         display: none;
     }
-    .nav-menu.responsive{
-    left: 0;
+    .nav-menu.responsive {
+        left: 0;
     }
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         top: 80px;
         left: -100%;
@@ -363,40 +375,40 @@ h3{
         width: 100%;
         min-height: 450px;
         height: 90vh;
-        transition: .3s;
+        transition: 0.3s;
     }
-    .nav-menu-list{
+    .nav-menu-list {
         flex-direction: column;
     }
-    .nav-menu-btn{
+    .nav-menu-btn {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .featured-box{
+    .featured-box {
         flex-direction: column;
         justify-content: center;
         height: 100vh;
     }
-    .featured-text{
+    .featured-text {
         width: 100%;
         order: 2;
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
-
     }
-    .social_icons{
+    .social_icons {
         margin-top: 2em;
     }
-    .featured-image{
+    .featured-image {
         order: 1;
         justify-content: center;
         min-height: 150px;
         width: 100%;
         margin-top: 65px;
     }
-    .image, .image img{
+    .image,
+    .image img {
         width: 150px;
         height: 150px;
     }
