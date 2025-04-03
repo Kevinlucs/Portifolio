@@ -2,177 +2,32 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kevin Lucas</title>
+        <!-- box icons -->
 
-        <!-- UNICONS -->
-        <link
-            rel="stylesheet"
-            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-        />
-
-        <!-- CSS -->
+        <!-- css -->
         <link rel="stylesheet" href="assets/css/style.css" />
-
-        <!-- FAVICON -->
-        <link
-            rel="shotcut icon"
-            href="assets/images/favicon.ico"
-            type="image/x-icon"
-        />
-        <title>Portfolio | Kevin Lucas</title>
     </head>
     <body>
-        <div class="container">
-            <!-- HEADER -->
-            <nav id="header">
-                <div class="nav-logo">
-                    <p class="nav-name">Kevin</p>
-                    <span>Lucas</span>
-                </div>
-                <div class="nav-menu" id="myNavMenu">
-                    <ul class="nav-menu-list">
-                        <li class="nav-list">
-                            <a href="#home" class="nav-link">Home</a>
-                            <div class="circle"></div>
-                        </li>
-                        <li class="nav-list">
-                            <a href="#about" class="nav-link">About</a>
-                            <div class="circle"></div>
-                        </li>
-                        <li class="nav-list">
-                            <a href="#projects" class="nav-link">Projects</a>
-                            <div class="circle"></div>
-                        </li>
-                        <li class="nav-list">
-                            <a href="#contact" class="nav-link">Contact</a>
-                            <div class="circle"></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-buton">
-                    <button class="btn">
-                        Download CV <i class="uil uil-file-alt"></i>
-                    </button>
-                </div>
-                <div class="nav-menu-btn">
-                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-                </div>
-            </nav>
-            <!-- MAIN -->
-            <main class="wrapper">
-                <!-- FEATURED BOX -->
-                <section class="featured-box" id="home">
-                    <div class="featured-text">
-                        <div class="featured-text-card">
-                            <span>Kevin Lucas</span>
-                        </div>
-                        <div class="featured-name">
-                            <p>I'm <span class="typedText">Developer</span></p>
-                        </div>
-                        <div class="featured-text-info">
-                            <p>
-                                I hold a degree in Systems Analysis and
-                                Development and a postgraduate qualification in
-                                Full Stack Development. Here, you can explore
-                                and contribute to my various projects.
-                            </p>
-                        </div>
-                        <div class="featured-text-btn">
-                            <button class="btn orange-btn">Hire Me</button>
-                            <button class="btn">
-                                Download CV <i class="uil uil-file-alt"></i>
-                            </button>
-                        </div>
-                        <div class="social_icons">
-                            <div class="icon">
-                                <i class="uil uil-instagram"></i>
-                            </div>
-                            <div class="icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </div>
-                            <div class="icon">
-                                <i class="uil uil-github-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-image">
-                        <div class="image">
-                            <img src="assets/images/Foto.png" alt="avatar" />
-                        </div>
-                    </div>
-                    <div class="scroll-icon-box">
-                        <a href="#about" class="scroll-btn">
-                            <i class="uil uil-mouse-alt"></i>
-                            <p>Scroll Down</p>
-                        </a>
-                    </div>
-                </section>
+        <!-- design header -->
+        <header class="header">
+            <button id="theme-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            </button>
 
-                <!-- ABOUT -->
-                <section class="section" id="about">
-                    <div class="top-header">
-                        <h1>About Me</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="about-info">
-                                <h3>My introduction</h3>
-                                <p>
-                                    I am well-versed in HTML, CSS and
-                                    JavaScript, and other cutting edge
-                                    frameworks and libraries, which allows me to
-                                    implement interactive features.
-                                </p>
-                                <div class="about-btn">
-                                    <button class="btn">
-                                        Download CV
-                                        <i class="uil uil-import"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="skills-box">
-                                <div class="skills-header">
-                                    <h3>FrontEnd</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <a><img src="https://skillicons.dev/icons?i=javascript&theme=light&perline=15" alt="My Skills" /></a>
-                                    <a><img src="https://skillicons.dev/icons?i=html&theme=light&perline=15" alt="My Skills" /></a>
-                                    <a><img src="https://skillicons.dev/icons?i=css&theme=light&perline=15" alt="My Skills" /></a>
-                                    <a><img src="https://skillicons.dev/icons?i=laravel&theme=light&perline=15" alt="My Skills" /></a>
-                                    <a><img src="https://skillicons.dev/icons?i=bootstrap&theme=light&perline=15" alt="My Skills" /></a>
-                                </div>
-                            </div>
-                            <div class="skills-box">
-                                <div class="skills-header">
-                                    <h3>Backend</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <a><img src="https://skillicons.dev/icons?i=php&theme=light&perline=15" alt="My Skills" /></a>
-                                </div>
-                            </div>
-                            <div class="skills-box">
-                                <div class="skills-header">
-                                    <h3>Database</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <a><img src="assets/images/oracle.png" alt=""></a>
-                                    <a><img src="https://skillicons.dev/icons?i=mysql&theme=light&perline=15" alt="My Skills" /></a>
-                                    <a><img src="https://skillicons.dev/icons?i=mongodb&theme=light&perline=15" alt="My Skills" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <!-- FOOTER -->
-        </div>
-        <!-- JS LINK -->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <!-- SCROLL REVEAL JS Link -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- MAIN JS  -->
-        <script src="assets/js/main.js"></script>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- js -->
+        <script src="assets/js/script.js"></script>
+        <script type="text/javascript" src="assets/js/whitemode.js"></script>
     </body>
 </html>
