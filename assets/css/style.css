@@ -17,6 +17,10 @@
     --accent-color: #0071ff;
 }
 
+.whitemode section {
+    background-image: url("/assets/images/bg-light.png");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -118,12 +122,12 @@ button {
 .home {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.home-content{
+.home-content {
     padding: 16rem;
     display: flex;
     flex-wrap: wrap;
@@ -153,3 +157,24 @@ button {
     color: var(--text-color);
     margin-top: 0.5rem;
 }
+
+/* Alinhar os ícones corretamente e garantir visibilidade */
+.social-media {
+    display: flex;
+    font-size: 18px;
+    line-height: 26px;
+    height: 39px;
+    width: 373px;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-media a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 10rem;
+}
+
+
