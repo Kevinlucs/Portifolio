@@ -67,16 +67,16 @@ button {
     align-items: center;
 }
 
-#theme-switch svg {
+#theme-switch img {
     fill: var(--text-color);
 }
-#theme-switch svg:last-child {
+#theme-switch img:last-child {
     display: none;
 }
-.whitemode #theme-switch svg:first-child {
+.whitemode #theme-switch img:first-child {
     display: none;
 }
-.whitemode #theme-switch svg:last-child {
+.whitemode #theme-switch img:last-child {
     display: block;
 }
 
