@@ -150,10 +150,10 @@ button {
     filter: grayscale(100%);
 }
 
-img {
+/* img {
     overflow-clip-margin: content-box;
     overflow: clip;
-}
+} */
 
 /* ICONES REDES SOCIAIS */
 .social-media {
@@ -164,27 +164,60 @@ img {
 }
 
 .social-media svg {
-    width: 30px; /* Adjust this value for your desired size */
-    height: 30px; /* Adjust this value for your desired size */
+    width: 30px;
+    height: 30px;
     margin-bottom: 20px;
 }
 
 .social-media svg {
-    fill: #ffffff; /* Cor branca para o modo escuro */
+    fill: #ffffff;
+}
+
+.social-media svg:hover {
+    fill: #871cc1;
 }
 
 .whitemode .social-media svg {
-    fill: #000000; /* Cor preta para o modo claro */
+    fill: #000000;
+}
+
+.whitemode .social-media svg:hover {
+    fill: #871cc1;
 }
 
 /* TEXTO */
 .home-content h1 {
     font-size: 8rem;
-    font-family: 'Arial Bold', sans-serif;
+    font-family: "Arial Bold", sans-serif;
     margin-bottom: 20px;
 }
 
 .home-content span {
     font-size: 2.5rem;
     color: var(--text-color);
+}
+
+/* ABOUT ME */
+.about {
+    display: flex;
+    padding:  10% 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--base-color);
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
 }
