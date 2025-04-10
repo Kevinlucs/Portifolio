@@ -1,251 +1,243 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kevin Lucas | Portfólio</title>
-        <!-- box icons -->
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-        <!-- css -->
-        <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
-    <body>
-        <!-- design header -->
-        <header class="header">
-            <button id="theme-switch">
-                <img src="assets/images/sol.svg" alt="sol icon" />
-                <img src="assets/images/lua.svg" alt="lua icon" />
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Lucas | Portfólio</title>
+  <!-- box icons -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-            <i class="bx bx-menu" id="menu-icon"></i>
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#qualification-section">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-        <!-- home section design -->
-        <section class="container" id="home">
-            <div class="about-home">
-                <div class="home-img">
-                    <img src="assets/images/Foto.png" alt="" />
-                </div>
-                <div class="home-content">
-                    <div class="social-media">
-                        <a href="https://github.com/Kevinlucs"
-                            ><svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                focusable="false"
-                                aria-hidden="true"
-                                viewBox="0 0 24 24"
-                                data-testid="GitHubIcon"
-                            >
-                                <path
-                                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                                ></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/keviinlucs/"
-                            ><svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                focusable="false"
-                                aria-hidden="true"
-                                viewBox="0 0 24 24"
-                                data-testid="LinkedInIcon"
-                            >
-                                <path
-                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
-                                ></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <h1>Kevin Lucas</h1>
-                    <span>Full Stack Developer</span>
-                </div>
-            </div>
-        </section>
+<body>
+  <!-- design header -->
+  <header class="header">
+    <button id="theme-switch">
+      <img src="assets/images/sol.svg" alt="sol icon" />
+      <img src="assets/images/lua.svg" alt="lua icon" />
+    </button>
 
-        <!-- About section design -->
-        <section class="about" id="about">
-            <div class="about-content">
-                <h2 class="heading">About <span>Me</span></h2>
-                <p>
-                    I hold a degree in Systems Analysis and Development and a
-                    postgraduate qualification in Full Stack Development. I have
-                    knowledge of HTML, CSS, JavaScript, PHP, Oracle Database,
-                    and MySQL. Currently, I am studying Laravel. I am constantly
-                    seeking to improve my skills and stay up-to-date with the
-                    latest technologies.
-                </p>
-            </div>
-        </section>
-        <!-- Educação -->
-        <section class="qualification section">
-            <h2 class="section-title">Qualification</h2>
-            <span class="section-subtitle">My journey</span>
-    
-            <div class="qualification-container container">
-              <div class="qualification-tabs">
-                <div
-                  class="qualification-button button-flex qualification-active"
-                  data-target="#education"
-                >
-                  <img src="assets/images/icon-graduation.svg" alt="">
-                  Education
-                </div>
-                <div class="qualification-button button-flex" data-target="#work">
-                  <i class="fa-solid fa-briefcase qualification-icon"></i>
-                  Work
-                </div>
-              </div>
-    
-              <div class="qualification-section">
-                <div
-                  class="qualification-content qualification-active"
-                  data-content
-                  id="education"
-                >
-                  <!-- qualifi 1 -->
-                  <div class="qualification-data">
-                    <div>
-                      <h3 class="qualification-title">
-                        Computer Science Engineering
-                      </h3>
-                      <span class="qualification-subtitle">GCET Kashmir</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2022 - 2026
-                      </div>
-                    </div>
-                    <div>
-                      <span class="qualification-round"></span>
-                      <span class="qualification-line"></span>
-                    </div>
-                  </div>
-    
-                  <!-- qualifi 2 -->
-    
-                  <div class="qualification-data">
-                    <div></div>
-    
-                    <div>
-                      <span class="qualification-round"></span>
-                      <span class="qualification-line"></span>
-                    </div>
-    
-                    <div>
-                      <h3 class="qualification-title">
-                        Full Stack Web Development
-                      </h3>
-                      <span class="qualification-subtitle">Udemy</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2021 - 2022
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- qualifi 3 -->
-    
-                  <div class="qualification-data">
-                    <div>
-                      <h3 class="qualification-title">Frontend Development</h3>
-                      <span class="qualification-subtitle">Coursera</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2021 - 2022
-                      </div>
-                    </div>
-                    <div>
-                      <span class="qualification-round"></span>
-                      <span class="qualification-line"></span>
-                    </div>
-                  </div>
-    
-                  <!-- qualifi 4 -->
-    
-                  <div class="qualification-data">
-                    <div></div>
-                    <div>
-                      <span class="qualification-round"></span>
-                      <!-- <span class="qualification-line"></span> -->
-                    </div>
-                    <div>
-                      <h3 class="qualification-title">Digital Marketing</h3>
-                      <span class="qualification-subtitle">Google</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2019 - 2020
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- qualific content 2  -->
-                <div class="qualification-content" data-content id="work">
-                  <!-- qualifi 1 -->
-                  <div class="qualification-data">
-                    <div>
-                      <h3 class="qualification-title">Full Stack Developer</h3>
-                      <span class="qualification-subtitle">Fiverr</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2022 - Present
-                      </div>
-                    </div>
-                    <div>
-                      <span class="qualification-round"></span>
-                      <span class="qualification-line"></span>
-                    </div>
-                  </div>
-    
-                  <!-- qualifi 2 -->
-    
-                  <div class="qualification-data">
-                    <div></div>
-    
-                    <div>
-                      <span class="qualification-round"></span>
-                      <span class="qualification-line"></span>
-                    </div>
-    
-                    <div>
-                      <h3 class="qualification-title">Ui/Ux Designer</h3>
-                      <span class="qualification-subtitle">Freelancer</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2022 - Present
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- qualifi 3 -->
-    
-                  <div class="qualification-data">
-                    <div>
-                      <h3 class="qualification-title">Content Creator</h3>
-                      <span class="qualification-subtitle">YouTube</span>
-                      <div class="qualification-date">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        2019 - Present
-                      </div>
-                    </div>
-                    <div>
-                      <span class="qualification-round"></span>
-                      <!-- <span class="qualification-line"></span> -->
-                    </div>
-                  </div>
-                </div>
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#qualification">Qualification</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+  <section class="container" id="home">
+    <div class="about-home">
+      <div class="home-img">
+        <img src="assets/images/Foto.png" alt="" />
+      </div>
+      <div class="home-content">
+        <div class="social-media">
+          <a href="https://github.com/Kevinlucs"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+              focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GitHubIcon">
+              <path
+                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/keviinlucs/"><svg
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
+              viewBox="0 0 24 24" data-testid="LinkedInIcon">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <h1>Kevin Lucas</h1>
+        <span>Full Stack Developer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section design -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p>
+        I hold a degree in Systems Analysis and Development and a
+        postgraduate qualification in Full Stack Development. I have
+        knowledge of HTML, CSS, JavaScript, PHP, Oracle Database,
+        and MySQL. Currently, I am studying Laravel. I am constantly
+        seeking to improve my skills and stay up-to-date with the
+        latest technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Educação -->
+  <section class="qualification section" id="qualification">
+    <h2 class="section-title">Qualification</h2>
+    <span class="section-subtitle">My journey</span>
+
+    <div class="qualification-container container">
+      <div class="qualification-tabs">
+        <div class="qualification-button button-flex qualification-active" data-target="#education">
+          <i class="fa-solid fa-graduation-cap qualification-icon"></i>
+          Education
+        </div>
+        <div class="qualification-button button-flex" data-target="#work">
+          <i class="fa-solid fa-briefcase qualification-icon"></i>
+          Work
+        </div>
+      </div>
+
+      <div class="qualification-section">
+        <div class="qualification-content qualification-active" data-content id="education">
+          <!-- qualifi 1 -->
+          <div class="qualification-data">
+            <div>
+              <h3 class="qualification-title">
+                Computer Science Engineering
+              </h3>
+              <span class="qualification-subtitle">GCET Kashmir</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2022 - 2026
               </div>
             </div>
-          </section>
-        <!-- js -->
-        <script src="assets/js/script.js"></script>
-        <script type="text/javascript" src="assets/js/whitemode.js"></script>
-    </body>
+            <div>
+              <span class="qualification-round"></span>
+              <span class="qualification-line"></span>
+            </div>
+          </div>
+
+          <!-- qualifi 2 -->
+
+          <div class="qualification-data">
+            <div></div>
+
+            <div>
+              <span class="qualification-round"></span>
+              <span class="qualification-line"></span>
+            </div>
+
+            <div>
+              <h3 class="qualification-title">
+                Full Stack Web Development
+              </h3>
+              <span class="qualification-subtitle">Udemy</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2021 - 2022
+              </div>
+            </div>
+          </div>
+
+          <!-- qualifi 3 -->
+
+          <div class="qualification-data">
+            <div>
+              <h3 class="qualification-title">Frontend Development</h3>
+              <span class="qualification-subtitle">Coursera</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2021 - 2022
+              </div>
+            </div>
+            <div>
+              <span class="qualification-round"></span>
+              <span class="qualification-line"></span>
+            </div>
+          </div>
+
+          <!-- qualifi 4 -->
+
+          <div class="qualification-data">
+            <div></div>
+            <div>
+              <span class="qualification-round"></span>
+              <!-- <span class="qualification-line"></span> -->
+            </div>
+            <div>
+              <h3 class="qualification-title">Digital Marketing</h3>
+              <span class="qualification-subtitle">Google</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2019 - 2020
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- qualific content 2  -->
+        <div class="qualification-content" data-content id="work">
+          <!-- qualifi 1 -->
+          <div class="qualification-data">
+            <div>
+              <h3 class="qualification-title">Full Stack Developer</h3>
+              <span class="qualification-subtitle">Fiverr</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2022 - Present
+              </div>
+            </div>
+            <div>
+              <span class="qualification-round"></span>
+              <span class="qualification-line"></span>
+            </div>
+          </div>
+
+          <!-- qualifi 2 -->
+
+          <div class="qualification-data">
+            <div></div>
+
+            <div>
+              <span class="qualification-round"></span>
+              <span class="qualification-line"></span>
+            </div>
+
+            <div>
+              <h3 class="qualification-title">Ui/Ux Designer</h3>
+              <span class="qualification-subtitle">Freelancer</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2022 - Present
+              </div>
+            </div>
+          </div>
+
+          <!-- qualifi 3 -->
+
+          <div class="qualification-data">
+            <div>
+              <h3 class="qualification-title">Content Creator</h3>
+              <span class="qualification-subtitle">YouTube</span>
+              <div class="qualification-date">
+                <i class="fa-solid fa-calendar-days"></i>
+                2019 - Present
+              </div>
+            </div>
+            <div>
+              <span class="qualification-round"></span>
+              <!-- <span class="qualification-line"></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- js -->
+  <script src="assets/js/script.js"></script>
+  <script type="text/javascript" src="assets/js/whitemode.js"></script>
+</body>
+
 </html>
