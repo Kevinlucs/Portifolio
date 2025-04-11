@@ -6,7 +6,8 @@
     --text-color: #ffffff;
     --secondary-text: #a4a5b8;
     --primary-color: #3a435d;
-    --accent-color: #0071ff;
+    --accent-color: #871cc1;
+    --accent-color2: #a76cc7;
 }
 .whitemode {
     --base-color: white;
@@ -14,7 +15,7 @@
     --text-color: #000000;
     --secondary-text: #232738;
     --primary-color: #3a435d;
-    --accent-color: #0071ff;
+    --accent-color: #871cc1;
 }
 
 .whitemode .about-home {
@@ -222,8 +223,14 @@ button {
     margin: 2rem 0 3rem;
 }
 
-/* EDUCAÇÃO */
-/* qualifi  */
+/* QUALIFICAÇÃO | EDUCAÇÃO */
+
+.qualification-section {
+    display: grid;
+    grid-template-columns: minmax(3fr);
+    justify-content: center;
+    background: var(--base-color);
+}
 
 .qualification .section-title {
     text-align: left;
@@ -244,72 +251,77 @@ button {
 
 .qualification-tabs {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--margin-bottom-0-2);
-  }
-  
-  .qualification-button {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 10rem
+}
+
+.qualification-button {
+    font-size: 2.5rem;
+    font-weight: 600;
     cursor: pointer;
-    color: hsl(var(--hue-color), 8%, 45%);
-  }
-  
-  .qualification-button:hover {
-    color: var(--first-color);
-  }
-  
-  .qualification-icon {
-    font-size: 1.25rem;
-    margin-right: var(--margin-bottom-0-25);
-  }
-  
-  .qualification-data {
+    color: var(--secondary-text);
+}
+
+.qualification-button:hover {
+    color: var(--accent-color2);
+}
+
+.qualification-icon {
+    font-size: 2.25rem;
+    margin-right: 0.25rem;
+}
+
+.qualification-data {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.5rem;
-  }
-  
-  .qualification-title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-  }
-  
-  .qualification-subtitle {
+    column-gap: 7rem;
+}
+
+.qualification-data > div:first-child {
+    margin-left: 10rem;
+}
+
+.qualification-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.qualification-subtitle {
     display: inline-block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--margin-bottom-0-1);
-  }
-  
-  .qualification-date {
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
-  }
-  
-  .qualification-round {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.qualification-date {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+}
+
+.qualification-round {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--first-color);
+    background-color: var(--accent-color2);
     border-radius: 50%;
-  }
-  
-  .qualification-line {
+}
+
+.qualification-line {
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
-    background-color: var(--first-color);
-    transform: translate(6px, -7px);
-  }
-  
-  .qualification [data-content] {
+    background-color: var(--accent-color2);
+    transform: translate(5.6px, -7px);
+}
+
+.qualification [data-content] {
     display: none;
-  }
-  
-  .qualification-active[data-content] {
+}
+
+.qualification-active[data-content] {
     display: block;
-  }
-  
-  .qualification-button.qualification-active {
+}
+
+.qualification-button.qualification-active {
     color: #5b0888;
-  }
+}
