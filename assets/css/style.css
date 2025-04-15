@@ -201,6 +201,7 @@ button {
 /* ABOUT ME */
 .about {
     display: flex;
+    flex-direction: column;
     padding: 7% 10%;
     justify-content: center;
     align-items: center;
@@ -221,6 +222,54 @@ button {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+/* Carrossel container */
+.carrossel-container {
+    width: 50%;
+    overflow: hidden;
+    margin-top: 2rem; /* Espaçamento para afastar do texto */
+    display: block; /* Faz o carrossel ocupar toda a linha e ficar abaixo */
+    text-align: center; /* Centraliza as imagens dentro do carrossel */
+}
+
+/* Carrossel flex */
+.carrossel {
+    display: inline-flex;
+    gap: 2rem;
+    animation: slide 50s linear infinite;
+    justify-content: center; /* Centraliza as imagens no carrossel */
+}
+
+/* Imagens do carrossel */
+.carrossel img {
+    width: 60px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.carrossel img:hover {
+    transform: scale(1.1);
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
 }
 
 /* QUALIFICAÇÃO | EDUCAÇÃO */
@@ -254,7 +303,7 @@ button {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
-    gap: 10rem
+    gap: 10rem;
 }
 
 .qualification-button {
