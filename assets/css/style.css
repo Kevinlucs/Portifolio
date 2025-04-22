@@ -275,7 +275,7 @@ button {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Quando o mouse estiver sobre a imagem, exibe o nome da linguagem */
+/* Quando o mouse estiver sobre a imagem, exibe o nome da linguagem  configurar */
 .carrossel-item:hover .language-name {
     opacity: 1;
     visibility: visible;
