@@ -226,25 +226,32 @@ button {
 
 /* Carrossel container */
 .carrossel-container {
-    width: 50%;
+    width: 80%;
+    height: 120px;
     overflow: hidden;
-    margin-top: 2rem; /* Espaçamento para afastar do texto */
-    display: block; /* Faz o carrossel ocupar toda a linha e ficar abaixo */
-    text-align: center; /* Centraliza as imagens dentro do carrossel */
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
 }
 
 /* Carrossel flex */
 .carrossel {
-    display: inline-flex;
-    gap: 2rem;
-    animation: slide 50s linear infinite;
-    justify-content: center; /* Centraliza as imagens no carrossel */
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+}
+
+/* Itens do carrossel */
+.carrossel-item {
+    position: relative;
+    display: inline-block;
 }
 
 /* Imagens do carrossel */
 .carrossel img {
-    width: 60px; /* Ajuste o tamanho das imagens conforme necessário */
+    width: 60px;
     height: 80px;
+    margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -253,23 +260,25 @@ button {
     transform: scale(1.1);
 }
 
-/* Animação do carrossel */
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(-400%);
-    }
+/* Nome da linguagem (invisível por padrão) */
+.language-name {
+    position: absolute;
+    bottom: -20px; /* Ajuste a posição vertical conforme necessário */
+    left: 0;
+    right: 0;
+    font-size: 1.4rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Quando o mouse estiver sobre a imagem, exibe o nome da linguagem  configurar */
+.carrossel-item:hover .language-name {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* QUALIFICAÇÃO | EDUCAÇÃO */
