@@ -33,13 +33,13 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
 
 html {
     font-size: 62.5%;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -100,10 +100,6 @@ button {
     margin-left: 4rem;
     transition: 0.3s;
 }
-
-/* .navbar a:hover{
-    color: var(--accent-color);
-} */
 
 #menu-icon {
     font-size: 3.6rem;
@@ -227,9 +223,9 @@ button {
 /* Carrossel container */
 .carrossel-container {
     width: 80%;
-    height: 120px;
+    height: 110px;
     overflow: hidden;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: block;
     text-align: center;
 }
@@ -239,19 +235,20 @@ button {
     display: flex;
     gap: 3.5rem;
     justify-content: center;
+    align-items: center;
 }
 
 /* Itens do carrossel */
 .carrossel-item {
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 /* Imagens do carrossel */
 .carrossel img {
     width: 60px;
     height: 80px;
-    margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -263,11 +260,12 @@ button {
 /* Nome da linguagem (invisível por padrão) */
 .language-name {
     position: absolute;
-    bottom: -20px; /* Ajuste a posição vertical conforme necessário */
-    left: 0;
-    right: 0;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1.4rem;
-    color: white;
+    font-weight: bold;
+    color: var(--text-color);
     padding: 5px;
     text-align: center;
     opacity: 0;
@@ -275,7 +273,7 @@ button {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Quando o mouse estiver sobre a imagem, exibe o nome da linguagem  configurar */
+/* Quando o mouse estiver sobre a imagem, exibe o nome da linguagem */
 .carrossel-item:hover .language-name {
     opacity: 1;
     visibility: visible;
