@@ -11,7 +11,7 @@ if (empty($_SESSION['csrf_token'])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin Lucas | Portfólio</title>
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -207,12 +207,12 @@ if (empty($_SESSION['csrf_token'])) {
                                     </svg>
                                 </a>
                                 <div class="project-caption">
-                                    <h5 class="white">Sistema Escala de Serviço</h5>
-                                    <p class="white">PHP | Laravel | Oracle DB</p>
+                                    <h5 class="white">Conecta Delivery</h5>
+                                    <p class="white">TypeScript | Node.js | PostgreSQL | Socket.io</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="carousel-slide project-box">
+                        <!-- <li class="carousel-slide project-box">
                             <img class="project-img" src="assets/img/works/portfolio2.jpg" alt="Portfolio" />
                             <div class="project-mask">
                                 <a href="https://github.com/keviinlucs/portfolio" target="_blank" class="project-link" aria-label="Ver no GitHub">
@@ -256,7 +256,7 @@ if (empty($_SESSION['csrf_token'])) {
                                     <p class="white">Para testar as setas</p>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
